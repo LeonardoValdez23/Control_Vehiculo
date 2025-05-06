@@ -1,0 +1,17 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  #ordenDisplay h3 {
+    transition: all 0.3s ease;
+  }
+  
+  .btn-orange {
+    background-color: #f0ad4e;
+    color: white;
+  }
+  
+  .btn-orange:hover {
+    background-color: #ec971f;
+  }
+  

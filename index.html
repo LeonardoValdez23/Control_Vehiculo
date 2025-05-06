@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Control de Órdenes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light">
+
+  <div class="container text-center mt-5">
+    <h1 class="mb-5">Control de Vehículo</h1>
+
+    <!-- Primera fila (3 botones) -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-4 col-md-2 mb-2">
+        <button class="btn btn-primary w-100" data-status="VUELTA IZQUIERDA ADE">VUELTA IZQUIERDA ADE</button>
+      </div>
+      <div class="col-4 col-md-2 mb-2">
+        <button class="btn btn-info w-100" data-status="ADELANTE">ADELANTE</button>
+      </div>
+      <div class="col-4 col-md-2 mb-2">
+        <button class="btn btn-primary w-100" data-status="VUELTA DERECHA ADE">VUELTA DERECHA ADE</button>
+      </div>
+    </div>
+
+    <!-- Segunda fila (5 botones) -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-4 col-md-2 mb-2">
+        <button class="btn btn-secondary w-100" data-status="GIRO 360 IZQ">GIRO 360 IZQ</button>
+      </div>
+      <div class="col-4 col-md-2 mb-2">
+        <button class="btn btn-warning w-100" data-status="GIRO 90 IZQ">GIRO 90 IZQ</button>
+      </div>
+      <div class="col-4 col-md-2 mb-2">
+        <button class="btn btn-danger w-100" data-status="DETENER">DETENER</button>
+      </div>
+      <div class="col-4 col-md-2 mb-2">
+        <button class="btn btn-warning w-100" data-status="GIRO 90 DER">GIRO 90 DER</button>
+      </div>
+      <div class="col-4 col-md-2 mb-2">
+        <button class="btn btn-secondary w-100" data-status="GIRO 360 DER">GIRO 360 DER</button>
+      </div>
+    </div>
+
+    <!-- Tercera fila (3 botones) -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-4 col-md-2 mb-2">
+        <button class="btn btn-primary w-100" data-status="VUELTA IZQUIERDA ATR">VUELTA IZQUIERDA ATR</button>
+      </div>
+      <div class="col-4 col-md-2 mb-2">
+        <button class="btn btn-warning w-100" data-status="ATRÁS">ATRÁS</button>
+      </div>
+      <div class="col-4 col-md-2 mb-2">
+        <button class="btn btn-primary w-100" data-status="VUELTA DERECHA ATR">VUELTA DERECHA ATR</button>
+      </div>
+    </div>
+
+    <!-- Resultado de la orden -->
+    <div id="ordenDisplay" class="mt-5">
+      <h3 class="text-muted">Aquí aparecerá la orden enviada</h3>
+    </div>
+
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
