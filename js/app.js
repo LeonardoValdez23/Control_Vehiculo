@@ -62,7 +62,7 @@ function iniciarBotones() {
         status: clave // Aquí solo se envía la CLAVE
       };
 
-      fetch('http://44.210.90.180/api/devices', {
+      fetch('http://18.205.159.222/api/devices', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
