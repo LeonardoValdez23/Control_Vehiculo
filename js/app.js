@@ -5,14 +5,14 @@ const statusMap = {
   "ADELANTE": "ADELANTE",
   "ATRÁS": "ATRAS",
   "DETENER": "DETENER",
-  "VUELTA DERECHA ADE": "V ADE DER",
-  "VUELTA IZQUIERDA ADE": "V ADE IZQ",
-  "VUELTA DERECHA ATR": "V ATR DER",
-  "VUELTA IZQUIERDA ATR": "V ATR IZQ",
-  "GIRO 90 DER": "G 90 DER",
-  "GIRO 90 IZQ": "G 90 IZQ",
-  "GIRO 360 DER": "G 360 DER",
-  "GIRO 360 IZQ": "G 360 IZQ"
+  "VUELTA DERECHA ADE": "V_ADE_DER",
+  "VUELTA IZQUIERDA ADE": "V_ADE_IZQ",
+  "VUELTA DERECHA ATR": "V_ATR_DER",
+  "VUELTA IZQUIERDA ATR": "V_ATR_IZQ",
+  "GIRO 90 DER": "G_90_DER",
+  "GIRO 90 IZQ": "G_90_IZQ",
+  "GIRO 360 DER": "G_360_DER",
+  "GIRO 360 IZQ": "G_360_IZQ"
 };
 
 // Diccionario inverso: clave corta => nombre completo
@@ -20,14 +20,14 @@ const displayMap = {
   "ADELANTE": "ADELANTE",
   "ATRAS": "ATRÁS",
   "DETENER": "DETENER",
-  "V ADE DER": "VUELTA ADELANTE DERECHA",
-  "V ADE IZQ": "VUELTA ADELANTE IZQUIERDA",
-  "V ATR DER": "VUELTA ATRÁS DERECHA",
-  "V ATR IZQ": "VUELTA ATRÁS IZQUIERDA",
-  "G 90 DER": "GIRO 90 DERECHA",
-  "G 90 IZQ": "GIRO 90 IZQUIERDA",
-  "G 360 DER": "GIRO 360 DERECHA",
-  "G 360 IZQ": "GIRO 360 IZQUIERDA"
+  "V_ADE_DER": "VUELTA ADELANTE DERECHA",
+  "V_ADE_IZQ": "VUELTA ADELANTE IZQUIERDA",
+  "V_ATR_DER": "VUELTA ATRÁS DERECHA",
+  "V_ATR_IZQ": "VUELTA ATRÁS IZQUIERDA",
+  "G_90_DER": "GIRO 90 DERECHA",
+  "G_90_IZQ": "GIRO 90 IZQUIERDA",
+  "G_360_DER": "GIRO 360 DERECHA",
+  "G_360_IZQ": "GIRO 360 IZQUIERDA"
 };
 
 // Obtener la IP pública al cargar la aplicación
@@ -62,7 +62,7 @@ function iniciarBotones() {
         status: clave // Aquí solo se envía la CLAVE
       };
 
-      fetch('http://3.83.156.168/api/devices', {
+      fetch('http://44.212.58.156/api/devices', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
