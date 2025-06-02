@@ -56,14 +56,40 @@
         <button class="btn btn-primary w-100" data-status="VUELTA DERECHA ATR">VUELTA DERECHA ATR</button>
       </div>
     </div>
+<!-- Botones de grabación -->
+<div class="row justify-content-center mb-4">
+  <div class="col-4 col-md-3 mb-2">
+    <button id="iniciarGrabacion" class="btn btn-outline-success w-100">Iniciar grabación</button>
+  </div>
+  <div class="col-4 col-md-3 mb-2">
+    <button id="comenzarSecuencia" class="btn btn-outline-primary w-100">Comenzar secuencia</button>
+  </div>
+  <div class="col-4 col-md-3 mb-2">
+    <button id="detenerSecuencia">Detener o borrar secuencia</button>
+  </div>
+</div>
+    <button id="detenerGrabacion" class="btn btn-warning">Detener grabación</button>
 
     <!-- Resultado de la orden -->
     <div id="ordenDisplay" class="mt-5">
       <h3 class="text-muted">Aquí aparecerá la orden enviada</h3>
     </div>
-
+  <!-- -->
+    <div class="mt-4">
+      <h4>Secuencia actual:</h4>
+      <ul id="listaSecuencia" class="list-group"></ul>
+    </div>
+    
   </div>
 
   <script src="js/app.js"></script>
+  <!-- Control de velocidad vertical -->
+<div style="position: fixed; top: 50%; right: 0; transform: translateY(-50%); padding: 1rem; background-color: #f8f9fa; border-left: 2px solid #dee2e6;">
+  <h5 class="text-center mb-2">Velocidad</h5>
+  <input type="range" id="velocidad" min="130" max="255" value="150" step="1" 
+         style="writing-mode: bt-lr; -webkit-appearance: slider-vertical; height: 200px; width: 30px;">
+  <p class="text-center mt-2"><span id="valorVelocidad">150</span></p>
+  <button id="btnEnviarVelocidad" class="btn btn-sm btn-outline-primary w-100 mt-2">Aplicar</button>
+</div>
 </body>
 </html>
