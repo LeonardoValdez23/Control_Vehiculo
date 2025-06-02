@@ -78,7 +78,7 @@ btnEnviarVelocidad.addEventListener("click", () => {
     status: `VELOCIDAD_${nuevaVelocidad}`
   };
 
-  fetch('http://44.204.231.124/api/devices', {
+  fetch('http://18.207.223.229/api/devices', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -204,7 +204,7 @@ btnDetener.addEventListener('click', () => {
       status: clave
     };
   
-    fetch('http://44.204.231.124/api/devices', {
+    fetch('http://18.207.223.229/api/devices', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
